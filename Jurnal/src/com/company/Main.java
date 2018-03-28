@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-       Scanner show = new Scanner(System.in);
+        Scanner show = new Scanner(System.in);
 
         System.out.println("Yudhistira Caraka 6706164022");
         System.out.print("Input :  ");
         int n = show.nextInt();
         long fib[] = new long[n];
-
-        long temp = 0;
 
         fib[0] = 1;
         fib[1] = 1;
@@ -23,8 +21,7 @@ public class Main {
         }
 
         for (int i = 0; i < n; i++) {
-            temp = temp + fib[i];
+            System.out.print(fib[i] +  " ");
         }
-        System.out.println(temp);
     }
 }
